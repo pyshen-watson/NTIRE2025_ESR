@@ -27,13 +27,13 @@ def select_model(args, device):
         model_path = os.path.join('model_zoo', 'team00_EFDN.pth')
         model = EFDN()
         model.load_state_dict(torch.load(model_path), strict=True)
-    elif model_id == 1:
+    elif model_id == 30:
         pass # ---- Put your model here as below ---
-        # from models.team01_[your_model_name] import [your_model_name]
-        # name, data_range = f"{model_id:02}_[your_model_name]", [255.0 / 1.0] # You can choose either 1.0 or 255.0 based on your own model
-        # model_path = os.path.join('model_zoo', 'team01_[your_model_name].pth')
-        # model = [your_model_name]()
-        # model.load_state_dict(torch.load(model_path), strict=True)
+        from models.team30_ARRLFN import ARRLFN
+        name, data_range = f"{model_id:02}_ARRLFN", 1.0 # You can choose either 1.0 or 255.0 based on your own model
+        model_path = os.path.join('model_zoo', 'team30_ARRLFN.pth')
+        model = ARRLFN()
+        model.load_state_dict(torch.load(model_path), strict=True)
     else:
         raise NotImplementedError(f"Model {model_id} is not implemented.")
 
