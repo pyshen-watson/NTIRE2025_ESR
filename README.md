@@ -4,6 +4,9 @@
 <img src="https://github.com/Amazingren/NTIRE2025_ESR/blob/main/figs/logo.png" width="400px"/> 
 </div>
 
+## For reviewers
+How to execute the code: `sh run.sh`
+
 ## News
 - :t-rex: February 8th, 2025: Our Challenge Repo. is ready!
 
